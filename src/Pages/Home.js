@@ -13,6 +13,13 @@ export const Home = () => {
       <HomeJumbo />
 
       <Container>
+        <Row className='text-center'>
+          <Col></Col>
+          <Col className='gallery-preview-header'>
+            <h1>Gallery</h1>
+          </Col>
+          <Col></Col>
+        </Row>
         <Row>
           <Col xs={12} sm={6} md={4}>
             <Image src={images[0].location} className='GalleryImage' />

@@ -14,7 +14,9 @@ export const Navigation = () => {
         variant='dark'
         fluid='true'
       >
-        <Navbar.Brand href='#home'>Mingdan Art</Navbar.Brand>
+        <Navbar.Brand className='brand-logo' href='/'>
+          Mingdan Art
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ml-auto '>
