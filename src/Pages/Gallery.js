@@ -6,9 +6,9 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 export const Gallery = () => {
   return (
     <div>
-      <Container>
+      <Container className='image-col'>
         <Row>
-          {images.map(item => {
+          {images.map((item) => {
             return (
               <Col xs={12} sm={6} md={4}>
                 <Image
