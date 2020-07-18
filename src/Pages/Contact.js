@@ -1,10 +1,10 @@
 import React from "react";
-import { Form, Row, Col, Container } from "react-bootstrap";
+import { Form, Row, Col, Container, Button } from "react-bootstrap";
 
 export const Contact = () => {
   return (
     //Sort out Cols and Rows
-    <Container className='m-5'>
+    <Container className='m-5 mx-auto'>
       <Row>
         <Col>
           <Form>
@@ -17,6 +17,10 @@ export const Contact = () => {
               <Form.Label>Message</Form.Label>
               <Form.Control as='textarea' rows='3' />
             </Form.Group>
+
+            <Button primary type='submit'>
+              Submit
+            </Button>
           </Form>
         </Col>
       </Row>
