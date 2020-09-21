@@ -3,21 +3,21 @@ import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
-  faInstagramSquare
+  faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-export const Footer = () => {
+export default () => {
   return (
     <div className='navbar-default'>
-      <Navbar bg='dark' variant='dark'>
-        <Navbar.Brand variant='dark'>Mingdan Art</Navbar.Brand>
+      <Navbar bg='light' variant='light'>
+        <Navbar.Brand variant='light'>Mingdan Art</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Nav className='ml-auto'>
           <Nav.Link href='facebook.com'>
             <FontAwesomeIcon icon={faFacebookSquare} size='lg' />
           </Nav.Link>
 
-          <Nav.Link>
+          <Nav.Link href='instagram.com'>
             <FontAwesomeIcon icon={faInstagramSquare} size='lg' />
           </Nav.Link>
         </Nav>

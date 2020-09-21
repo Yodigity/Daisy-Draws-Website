@@ -1,37 +1,33 @@
 import React from "react";
 import { Image, Container, Row, Col } from "react-bootstrap";
+import SimpleReactLightbox from "simple-react-lightbox";
+import { SRLWrapper } from "simple-react-lightbox";
 import images from "../Components/images";
-import { HomeBackground } from "../Components/Home-background";
-import { HomeJumbo } from "../Components/Home-Jumbo";
-import { Profiles } from "../Components/Profiles";
+import PageLayout from "../Components/PageLayout";
 
 export const Home = () => {
   return (
-    <div>
-      <HomeBackground />
-      <Profiles />
-      <HomeJumbo />
-
-      <Container>
-        <Row className='text-center'>
-          <Col></Col>
-          <Col className='gallery-preview-header'>
-            <h1>Gallery</h1>
+    <PageLayout>
+      <Container className='mt-2'>
+        <SimpleReactLightbox>
+          <Col>
+            <SRLWrapper>
+              {images.map((image) => {
+                return (
+                  <a key={image.id} href={image.src} data-attribute='SRL'>
+                    <Image
+                      src={image.src}
+                      alt={image.description}
+                      width='200'
+                      height='200'
+                    />
+                  </a>
+                );
+              })}
+            </SRLWrapper>
           </Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col xs={12} sm={6} md={4}>
-            <Image src={images[0].location} className='GalleryImage' />
-          </Col>
-          <Col xs={12} sm={6} md={4}>
-            <Image src={images[1].location} className='GalleryImage' />
-          </Col>
-          <Col xs={12} sm={6} md={4}>
-            <Image src={images[2].location} className='GalleryImage' />
-          </Col>
-        </Row>
+        </SimpleReactLightbox>
       </Container>
-    </div>
+    </PageLayout>
   );
 };

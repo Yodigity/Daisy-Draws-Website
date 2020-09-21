@@ -6,6 +6,7 @@ export const Profiles = () => {
     <>
       <h1>Meet The Team</h1>
       <Row lg={12}>
+        
         <CardColumns>
           <Card style={{ width: "18rem" }}>
             <Card.Img variant='top' src='../Images/Aaron.jpg' />

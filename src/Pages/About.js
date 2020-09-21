@@ -1,65 +1,97 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import PageLayout from "../Components/PageLayout";
+import PageTitle from "../Components/PageTitle";
+import { Container, Image, Row, Col, Nav } from "react-bootstrap";
 
 export const About = () => {
   return (
-    <div>
+    <PageLayout>
+      <PageTitle title='About Me' />
       <Container>
-        <Image src='../Images/yui.jpg' id='about-image' roundedCircle fluid />
+        <Row>
+          <Col>
+            <article className='w-100 m-auto pt-2 text-justify'>
+              <p className='i-5 mt-4 pt-2'>
+                Hello there! My name is <b>Daisy</b>, an
+                <b> Illustrator</b> discovering the ways of the code. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
 
-        <p className='about-text mx-auto'>
-          The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et
-          Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis
-          iste natus error sit voluptatem accusantium doloremque laudantium,
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-          quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-          voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit, sed quia non numquam eius modi tempora
-          incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
-          enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-          autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur?"
-        </p>
-        <p>
-          Why do we use it? It is a long established fact that a reader will be
-          distracted by the readable content of a page when looking at its
-          layout. The point of using Lorem Ipsum is that it has a more-or-less
-          normal distribution of letters, as opposed to using 'Content here,
-          content here', making it look like readable English. Many desktop
-          publishing packages and web page editors now use Lorem Ipsum as their
-          default model text, and a search for 'lorem ipsum' will uncover many
-          web sites still in their infancy. Various versions have evolved over
-          the years, sometimes by accident, sometimes on purpose (injected
-          humour and the like). Where does it come from? Contrary to popular
-          belief, Lorem Ipsum is not simply random text. It has roots in a piece
-          of classical Latin literature from 45 BC, making it over 2000 years
-          old. Richard McClintock, a Latin professor at Hampden-Sydney College
-          in Virginia, looked up one of the more obscure Latin words,
-          consectetur, from a Lorem Ipsum passage, and going through the cites
-          of the word in classical literature, discovered the undoubtable
-          source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-          Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-          written in 45 BC. This book is a treatise on the theory of ethics,
-          very popular during the Renaissance. The first line of Lorem Ipsum,
-          "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de
-          Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-          exact original form, accompanied by English versions from the 1914
-          translation by H. Rackham.
-        </p>
+              <p className='i-5'>
+                In my spare time, Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <p className='i-5'>
+                Check out my <Nav.Link href='./Gallery'>projects</Nav.Link> to
+                see what I've been up to!
+              </p>
+            </article>
+          </Col>
+          <Col>
+            <Image
+              rounded
+              width='400'
+              height='500'
+              src={"../Images/About/Daisy.jpeg"}
+              alt='Daisy'
+            />
+          </Col>
+        </Row>
+
+        <article className='w-75 m-auto'>
+          <>
+            <hr />
+            <p className='unemployed'>
+              <small>
+                I am <b>currently looking for new opportunities</b>! If you like
+                what you<Nav.Link to='/resume'>see</Nav.Link> Let's get in&nbsp;
+                <a
+                  href='mailto:red.five@rebellion.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  touch
+                </a>
+                !
+              </small>
+            </p>
+          </>
+        </article>
+        <hr />
+
+        <Row>
+          <Col>
+            <article>
+              <h5 className='watch-list-title pt-4'>
+                Here are a couple of books from my reading list:
+              </h5>
+              <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>
+                <li>Lord of the Rings</li>
+                <li>Indiana Jones</li>
+                <li>Back To The Future</li>
+              </ul>
+            </article>
+          </Col>
+          <Col>
+            <article>
+              <h5 className='watch-list-title pt-4'>
+                Here are a couple of shows from my watch list:
+              </h5>
+              <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>
+                <li>Lord of the Rings</li>
+                <li>Indiana Jones</li>
+                <li>Back To The Future</li>
+              </ul>
+            </article>
+          </Col>
+        </Row>
       </Container>
-    </div>
+    </PageLayout>
   );
 };

@@ -4,32 +4,32 @@ import { Navbar, Nav, NavLink } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import "../App.css";
 
-export const Navigation = () => {
+export default () => {
   return (
     <div className='navbar-default'>
       <Navbar
         collapseOnSelect
         expand='lg'
-        bg='dark'
-        variant='dark'
+        bg='light'
+        variant='light'
         fluid='true'
       >
         <Navbar.Brand className='brand-logo' href='/'>
-          Mingdan Art
+          Daisy Draws
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ml-auto '>
-            <LinkContainer to='/' className='mr-3 text-white'>
+            <LinkContainer to='/' className='mr-3'>
               <NavLink>Home</NavLink>
             </LinkContainer>
-            <LinkContainer to='/about' className='mr-3 text-white'>
+            <LinkContainer to='/about' className='mr-3 '>
               <NavLink>About</NavLink>
             </LinkContainer>
-            <LinkContainer to='/gallery' className='mr-3 text-white'>
+            <LinkContainer to='/gallery' className='mr-3'>
               <NavLink href='#'>Gallery</NavLink>
             </LinkContainer>
-            <LinkContainer to='/contact' className='mr-3 text-white'>
+            <LinkContainer to='/contact' className='mr-3 '>
               <NavLink>Contact</NavLink>
             </LinkContainer>
           </Nav>
