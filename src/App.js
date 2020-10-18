@@ -7,7 +7,7 @@ import "./App.css";
 import { Gallery } from "./Pages/Gallery";
 import { About } from "./Pages/About";
 import { Home } from "./Pages/Home";
-import { Contact } from "./Pages/Contact";
+import { Resume } from "./Pages/Resume";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
 
             <Route path='/Gallery' component={Gallery}></Route>
 
-            <Route path='/Contact' component={Contact}></Route>
+            <Route path='/Resume' component={Resume}></Route>
           </Switch>
         </Router>
       </div>

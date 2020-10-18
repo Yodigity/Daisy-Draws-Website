@@ -13,7 +13,7 @@ body {
 
 h1 {
   text-transform: uppercase;
-  margin: 2rem 0;
+  margin: 0.2rem 0;
 }
 
 .brand-logo {
@@ -97,4 +97,19 @@ h1 {
 .gallery-preview-header {
   font-size: 7vw;
   overflow-x: visible;
+}
+
+/* .basic-info-container {
+  background-color: #17a2b8;
+} */
+.resume-basic-info {
+  border: #000000;
+  border-style: dotted;
+  border-radius: 3;
+  padding: 1em;
+  margin: 1em 0.5em;
+}
+
+.resume-name {
+  margin: 0 0 0.4em 0;
 }

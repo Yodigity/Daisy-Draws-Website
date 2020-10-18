@@ -29,8 +29,8 @@ export default () => {
             <LinkContainer to='/gallery' className='mr-3'>
               <NavLink href='#'>Gallery</NavLink>
             </LinkContainer>
-            <LinkContainer to='/contact' className='mr-3 '>
-              <NavLink>Contact</NavLink>
+            <LinkContainer to='/resume' className='mr-3 '>
+              <NavLink>Resume</NavLink>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

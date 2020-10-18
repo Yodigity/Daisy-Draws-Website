@@ -1,15 +1,14 @@
 import React from "react";
 import PageLayout from "../Components/PageLayout";
-import PageTitle from "../Components/PageTitle";
+
 import { Container, Image, Row, Col, Nav } from "react-bootstrap";
 
 export const About = () => {
   return (
     <PageLayout>
-      <PageTitle title='About Me' />
-      <Container>
+      <Container className='mt-3'>
         <Row>
-          <Col>
+          <Col className='my-auto'>
             <article className='w-100 m-auto pt-2 text-justify'>
               <p className='i-5 mt-4 pt-2'>
                 Hello there! My name is <b>Daisy</b>, an
@@ -47,19 +46,17 @@ export const About = () => {
         <article className='w-75 m-auto'>
           <>
             <hr />
-            <p className='unemployed'>
-              <small>
-                I am <b>currently looking for new opportunities</b>! If you like
-                what you<Nav.Link to='/resume'>see</Nav.Link> Let's get in&nbsp;
-                <a
-                  href='mailto:red.five@rebellion.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  touch
-                </a>
-                !
-              </small>
+            <p>
+              I am <b>currently looking for new opportunities</b>! If you like
+              what you<Nav.Link to='/resume'>see</Nav.Link> Let's get in&nbsp;
+              <a
+                href='mailto:red.five@rebellion.com'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                touch
+              </a>
+              !
             </p>
           </>
         </article>

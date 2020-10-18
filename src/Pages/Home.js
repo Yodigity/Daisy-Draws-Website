@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Container, Row, Col } from "react-bootstrap";
+import { Image, Container, Col } from "react-bootstrap";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 import images from "../Components/images";
