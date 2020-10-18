@@ -20,7 +20,7 @@ export const Resume = () => {
           <a 
           href='mailto:pengmingdan@hotmail.com'
                 target='_blank'
-                rel='noopener noreferrer'> pengmingdan@hotmail.com</a></Col>
+                rel='noopener noreferrer'>pengmingdan@hotmail.com</a></Col>
         </Row>
       </div>
 
