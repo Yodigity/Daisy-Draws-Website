@@ -16,7 +16,11 @@ export const Resume = () => {
           </Col>
         </Row>
         <Row>
-          <Col>Email: pengmingdan@hotmail.com</Col>
+          <Col>Email:&nbsp;
+          <a 
+          href='mailto:pengmingdan@hotmail.com'
+                target='_blank'
+                rel='noopener noreferrer'> pengmingdan@hotmail.com</a></Col>
         </Row>
       </div>
 
@@ -221,11 +225,9 @@ export const Resume = () => {
      <Col>
         <OverlayTrigger placement="right"
     delay={{ show: 250, hide: 400 }}
-    overlay={<Tooltip className="skill-tooltip">
-    Inventor
-  </Tooltip>}>
+    overlay={<Tooltip className="skill-tooltip">Inventor</Tooltip>}>
         <Image
-                  src='../Images/Resume-Icons/Inventor-Icon.png'
+          src='../Images/Resume-Icons/Inventor-Icon.png'
                   roundedCircle
                   height='50'
                 />
