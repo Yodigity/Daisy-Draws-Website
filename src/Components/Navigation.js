@@ -10,8 +10,7 @@ export default () => {
       <Navbar
         collapseOnSelect
         expand='lg'
-        bg='light'
-        variant='light'
+       
         fluid='true'
       >
         <Navbar.Brand className='brand-logo' href='/'>

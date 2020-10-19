@@ -48,7 +48,7 @@ export const About = () => {
             <hr />
             <p>
               I am <b>currently looking for new opportunities</b>! If you like
-              what you<Nav.Link to='/resume'>see</Nav.Link> Let's get in&nbsp;
+              what you<Nav.Link href='./resume'>see</Nav.Link> Let's get in&nbsp;
               <a
                 href='mailto:red.five@rebellion.com'
                 target='_blank'

@@ -1,12 +1,14 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 
 import images from "../Components/images";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
-import { Col, Container, Image } from "react-bootstrap";
+import { Col, Container, Image, Fade } from "react-bootstrap";
 import PageLayout from "../Components/PageLayout";
 
 export const Gallery = () => {
+
+
   return (
     <PageLayout>
       <SimpleReactLightbox>
@@ -15,6 +17,7 @@ export const Gallery = () => {
             <SRLWrapper>
               {images.map((image) => {
                 return (
+              
                   <a key={image.id} href={image.src} data-attribute='SRL'>
                     <Image
                       src={image.src}
@@ -23,6 +26,7 @@ export const Gallery = () => {
                       height='200'
                     />
                   </a>
+               
                 );
               })}
             </SRLWrapper>

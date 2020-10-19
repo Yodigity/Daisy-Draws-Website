@@ -17,9 +17,8 @@ h1 {
 }
 
 .brand-logo {
-  text-shadow: 4px 4px 4px #000000;
+  text-shadow: 4px 4px 4px skyblue;
   font-size: 1.5rem;
-  color: #ffffff;
 }
 
 .landing-banner {
@@ -103,11 +102,14 @@ h1 {
   background-color: #17a2b8;
 } */
 .resume-basic-info {
-  border: #000000;
-  border-style: dotted;
-  border-radius: 3;
-  padding: 1em;
-  margin: 1em 0.5em;
+  background-color: navy;
+  padding: 1em 0;
+  margin: 1em 0;
+  color: #ffffff;
+}
+
+.resume-basic-info a {
+  color: #ffffff;
 }
 
 .resume-name {

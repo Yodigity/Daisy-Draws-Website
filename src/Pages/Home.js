@@ -6,12 +6,6 @@ import images from "../Components/images";
 import PageLayout from "../Components/PageLayout";
 
 export const Home = () => {
-  const [open, setOpen] = useState(false);
-
-useEffect(() => {
-  setTimeout(() => setOpen(true), 400)
-  
-}, [])
 
   return (
     <PageLayout>
@@ -22,9 +16,7 @@ useEffect(() => {
             <SRLWrapper>
       
               {images.map((image, index) => {
-                return(
-                  
-                  <Fade in={open}  timeout={700}>
+                return(     
                   <a key={image.id} href={image.src} data-attribute='SRL'>
                     <Image
                       src={image.src}
@@ -33,10 +25,11 @@ useEffect(() => {
                       height='200'
                     />
                   </a>
-                  </Fade>
-               
+                    )
+                  
+                  }
                 )
-              })}
+              }
               
            
             </SRLWrapper>

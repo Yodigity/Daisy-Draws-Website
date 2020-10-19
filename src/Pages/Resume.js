@@ -1,16 +1,15 @@
 import React from "react";
-import { Row, Col, Image, Table, Tooltip, OverlayTrigger } from "react-bootstrap";
+import { Row, Col, Image, Tooltip, OverlayTrigger } from "react-bootstrap";
 
 import PageLayout from "../Components/PageLayout";
 
 export const Resume = () => {
 
-  
   return (
     //Sort out Cols and Rows
     <PageLayout>
-      <div className='resume-basic-info '>
-        <Row>
+      <div className='resume-basic-info'>
+        <Row className>
           <Col>
             <h1 className='resume-name'>Daisy Peng</h1>
           </Col>
@@ -118,81 +117,8 @@ export const Resume = () => {
         </Col>
       </Row>{" "} */}
 
-      {/* Skills */}
-      {/* <Row>
-        <Col>
-          <h1>
-            <u>Skills</u>
-          </h1>
-        </Col>
-        <Col />
-        <Col />
-      </Row>
-      <Row>
-        <Col />
-        <Col>
-          <ul>
-            <Row>
-              <li>
-                <Image
-                  src='../Images/Resume-Icons/AutoCAD-icon.jpeg'
-                  roundedCircle
-                  height='50'
-                />{" "}
-                AutoCAD
-              </li>
-            </Row>
-            <Row>
-              <li>
-                <Image
-                  src='../Images/Resume-Icons/Photoshop-Icon.png'
-                  roundedCircle
-                  height='50'
-                />{" "}
-                Photoshop
-              </li>
-            </Row>
-            <Row>
-              <li>
-                <Image
-                  src='../Images/Resume-Icons/UG-Icon.jpeg'
-                  roundedCircle
-                  height='50'
-                />{" "}
-                UG
-              </li>
-            </Row>
-          </ul>
-        </Col>
-        <Col>
-          <Col></Col>
-          <ul>
-            <Row>
-              <li>
-                <Image
-                  src='../Images/Resume-Icons/Adobe-Illustrator-Icon.png'
-                  roundedCircle
-                  height='50'
-                />{" "}
-                Adobe Illustrator
-              </li>
-            </Row>
-            <Row>
-              <li>
-                <Image
-                  src='../Images/Resume-Icons/Inventor-Icon.png'
-                  roundedCircle
-                  height='50'
-                />
-                Inventor
-              </li>
-            </Row>
+      
 
-            <li>Something else</li>
-          </ul>
-        </Col>
-        <Col></Col>
-      </Row> */}
 
 
 <Row>

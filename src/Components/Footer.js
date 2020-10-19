@@ -9,8 +9,8 @@ import {
 export default () => {
   return (
     <div className='navbar-default'>
-      <Navbar bg='light' variant='light'>
-        <Navbar.Brand variant='light'>Mingdan Art</Navbar.Brand>
+      <Navbar >
+        <Navbar.Brand className="brand-logo" variant='dark'>Daisy Draws</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Nav className='ml-auto'>
           <Nav.Link href='facebook.com'>

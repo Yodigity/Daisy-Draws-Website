@@ -12,6 +12,7 @@ import { Resume } from "./Pages/Resume";
 function App() {
   return (
     <div className='App'>
+      
       <div className='main'>
         <Router>
           <Switch>
