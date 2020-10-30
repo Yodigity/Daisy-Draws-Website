@@ -24,8 +24,8 @@ export const Resume = () => {
       </div>
 
       {/* About */}
-      <Row>
-        <Col>
+      <Row className="resume-title">
+        <Col >
           <h1>
             <u>About</u>
           </h1>
@@ -45,7 +45,7 @@ export const Resume = () => {
         </Col>
       </Row>
       {/* Work Experience */}
-      <Row>
+      <Row className="resume-title">
         <Col>
           <h1>
             <u>Experience</u>
@@ -55,12 +55,12 @@ export const Resume = () => {
         <Col></Col>
       </Row>
       <Row className='my-2'>
-        <Col className='my-auto'>
+        <Col className='job-details my-auto'>
           <h2>ARTIST </h2>
           <p className='mb-0'>Freelance</p>
           <p>Oct 2019 - Present</p>
         </Col>
-        <Col>
+        <Col className="job-skills">
           <ul className='my-auto'>
             <li>
               - Design, develop, and deliver art pieces to clients according to
@@ -121,7 +121,7 @@ export const Resume = () => {
 
 
 
-<Row>
+<Row className="resume-title"> 
         <Col>
           <h1>
             <u>Skills</u>
@@ -202,7 +202,7 @@ export const Resume = () => {
 
       <hr />
       {/* Education */}
-      <Row className='mb-2'>
+      <Row className='resume-title'>
         <Col>
           <h1>
             <u>Education</u>
