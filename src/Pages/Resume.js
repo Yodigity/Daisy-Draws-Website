@@ -56,38 +56,38 @@ export const Resume = () => {
             </p>
           </Col>
         </Row>
-      </Container>
-      {/* Work Experience */}
-      <Row className='resume-title'>
-        <Col>
-          <h1>
-            <u>Experience</u>
-          </h1>
-        </Col>
-        <Col></Col>
-        <Col></Col>
-      </Row>
-      <Row className='my-2'>
-        <Col className='job-details my-auto'>
-          <h2>ARTIST </h2>
-          <p className='mb-0'>Freelance</p>
-          <p>Oct 2019 - Present</p>
-        </Col>
-        <Col className='job-skills'>
-          <ul className='my-auto'>
-            <li>
-              - Design, develop, and deliver art pieces to clients according to
-              specifications{" "}
-            </li>
 
-            <li>
-              - Produce stylized and realistic photos for 3 online websites
-            </li>
-          </ul>
-        </Col>
-      </Row>
-      <hr />
-      {/* <Row>
+        {/* Work Experience */}
+        <Row className='resume-title'>
+          <Col>
+            <h1>
+              <u>Experience</u>
+            </h1>
+          </Col>
+          <Col></Col>
+          <Col></Col>
+        </Row>
+        <Row className='my-2'>
+          <Col className='job-details my-auto'>
+            <h2>ARTIST </h2>
+            <p className='mb-0'>Freelance</p>
+            <p>Oct 2019 - Present</p>
+          </Col>
+          <Col className='job-skills'>
+            <ul className='my-auto'>
+              <li>
+                - Design, develop, and deliver art pieces to clients according
+                to specifications{" "}
+              </li>
+
+              <li>
+                - Produce stylized and realistic photos for 3 online websites
+              </li>
+            </ul>
+          </Col>
+        </Row>
+        <hr />
+        {/* <Row>
         <Col className='my-auto'>
           <h2>Waitress</h2>
           <p className='mb-0'>Langzhou Beef Noodle Bar</p>
@@ -130,116 +130,117 @@ export const Resume = () => {
         </Col>
       </Row>{" "} */}
 
-      <Row className='resume-title'>
-        <Col>
-          <h1>
-            <u>Skills</u>
-          </h1>
-        </Col>
-        <Col />
-        <Col />
-      </Row>
-
-      <Row className='my-3'>
-        <Col>
-          <OverlayTrigger
-            placement='right'
-            delay={{ show: 250, hide: 400 }}
-            overlay={<Tooltip className='skill-tooltip'>AutoCAD</Tooltip>}
-          >
-            <Image
-              src='../Images/Resume-Icons/AutoCAD-icon.jpeg'
-              roundedCircle
-              height='50'
-            />
-          </OverlayTrigger>
-        </Col>
-
-        <Col>
-          <OverlayTrigger
-            placement='right'
-            delay={{ show: 250, hide: 400 }}
-            overlay={<Tooltip className='skill-tooltip'>Inventor</Tooltip>}
-          >
-            <Image
-              src='../Images/Resume-Icons/Inventor-Icon.png'
-              roundedCircle
-              height='50'
-            />
-          </OverlayTrigger>
-        </Col>
-
-        <Col>
-          <OverlayTrigger
-            placement='right'
-            delay={{ show: 250, hide: 400 }}
-            overlay={<Tooltip className='skill-tooltip'>Photoshop</Tooltip>}
-          >
-            <Image
-              src='../Images/Resume-Icons/Photoshop-Icon.png'
-              roundedCircle
-              height='50'
-            />
-          </OverlayTrigger>
-        </Col>
-
-        <Col>
-          <OverlayTrigger
-            placement='right'
-            delay={{ show: 250, hide: 400 }}
-            overlay={
-              <Tooltip className='skill-tooltip'>Adobe Illustrator</Tooltip>
-            }
-          >
-            <Image
-              src='../Images/Resume-Icons/Adobe-Illustrator-Icon.png'
-              roundedCircle
-              height='50'
-            />
-          </OverlayTrigger>
-        </Col>
-
-        <Col>
-          <OverlayTrigger
-            placement='right'
-            delay={{ show: 250, hide: 400 }}
-            overlay={<Tooltip className='skill-tooltip'>UG</Tooltip>}
-          >
-            <Image
-              src='../Images/Resume-Icons/UG-Icon.jpeg'
-              roundedCircle
-              height='50'
-            />
-          </OverlayTrigger>
-        </Col>
-      </Row>
-
-      <hr />
-      {/* Education */}
-      <Row className='resume-title'>
-        <Col>
-          <h1>
-            <u>Education</u>
-          </h1>
-        </Col>
-        <Col></Col>
-        <Col></Col>
-      </Row>
-      <Row className='my-2'>
-        {/* <Col className='p-0'></Col> */}
-
-        <Row lg={6} className='mx-auto'>
+        <Row className='resume-title'>
           <Col>
-            <h4>Mechanical Design</h4>
+            <h1>
+              <u>Skills</u>
+            </h1>
           </Col>
-          <Col></Col>
-          <Col>
-            <h5>Dalian Vocational & Technical College</h5>
+          <Col />
+          <Col />
+        </Row>
 
-            <h6>Sept 2009-June 2012</h6>
+        <Row className='my-3'>
+          <Col>
+            <OverlayTrigger
+              placement='right'
+              delay={{ show: 250, hide: 400 }}
+              overlay={<Tooltip className='skill-tooltip'>AutoCAD</Tooltip>}
+            >
+              <Image
+                src='../Images/Resume-Icons/AutoCAD-icon.jpeg'
+                roundedCircle
+                height='50'
+              />
+            </OverlayTrigger>
+          </Col>
+
+          <Col>
+            <OverlayTrigger
+              placement='right'
+              delay={{ show: 250, hide: 400 }}
+              overlay={<Tooltip className='skill-tooltip'>Inventor</Tooltip>}
+            >
+              <Image
+                src='../Images/Resume-Icons/Inventor-Icon.png'
+                roundedCircle
+                height='50'
+              />
+            </OverlayTrigger>
+          </Col>
+
+          <Col>
+            <OverlayTrigger
+              placement='right'
+              delay={{ show: 250, hide: 400 }}
+              overlay={<Tooltip className='skill-tooltip'>Photoshop</Tooltip>}
+            >
+              <Image
+                src='../Images/Resume-Icons/Photoshop-Icon.png'
+                roundedCircle
+                height='50'
+              />
+            </OverlayTrigger>
+          </Col>
+
+          <Col>
+            <OverlayTrigger
+              placement='right'
+              delay={{ show: 250, hide: 400 }}
+              overlay={
+                <Tooltip className='skill-tooltip'>Adobe Illustrator</Tooltip>
+              }
+            >
+              <Image
+                src='../Images/Resume-Icons/Adobe-Illustrator-Icon.png'
+                roundedCircle
+                height='50'
+              />
+            </OverlayTrigger>
+          </Col>
+
+          <Col>
+            <OverlayTrigger
+              placement='right'
+              delay={{ show: 250, hide: 400 }}
+              overlay={<Tooltip className='skill-tooltip'>UG</Tooltip>}
+            >
+              <Image
+                src='../Images/Resume-Icons/UG-Icon.jpeg'
+                roundedCircle
+                height='50'
+              />
+            </OverlayTrigger>
           </Col>
         </Row>
-      </Row>
+
+        <hr />
+        {/* Education */}
+        <Row className='resume-title'>
+          <Col>
+            <h1>
+              <u>Education</u>
+            </h1>
+          </Col>
+          <Col></Col>
+          <Col></Col>
+        </Row>
+        <Row className='my-2'>
+          {/* <Col className='p-0'></Col> */}
+
+          <Row lg={6} className='mx-auto'>
+            <Col>
+              <h4>Mechanical Design</h4>
+            </Col>
+            <Col></Col>
+            <Col>
+              <h5>Dalian Vocational & Technical College</h5>
+
+              <h6>Sept 2009-June 2012</h6>
+            </Col>
+          </Row>
+        </Row>
+      </Container>
     </PageLayout>
   );
 };

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Image, Container, Col, Fade } from "react-bootstrap";
+import React from "react";
+import { Image, Container, Col } from "react-bootstrap";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
 import images from "../Components/images";
