@@ -8,7 +8,7 @@ export const About = () => {
     <PageLayout>
       <Container className='mt-3'>
         <Row>
-          <Col className='my-auto'>
+          <Col className='my-auto col-md-6  col-sm-12'>
             <article className='w-100 m-auto pt-2 text-justify'>
               <p className='i-5 mt-4 pt-2'>
                 Hello there! My name is <b>Daisy</b>, an
@@ -32,7 +32,7 @@ export const About = () => {
               </p>
             </article>
           </Col>
-          <Col>
+          <Col className='col-md-6 col-sm-12'>
             <Image
               rounded
               width='400'
@@ -48,7 +48,8 @@ export const About = () => {
             <hr />
             <p>
               I am <b>currently looking for new opportunities</b>! If you like
-              what you<Nav.Link href='./resume'>see</Nav.Link> Let's get in&nbsp;
+              what you<Nav.Link href='./resume'>see</Nav.Link> Let's get
+              in&nbsp;
               <a
                 href='mailto:red.five@rebellion.com'
                 target='_blank'

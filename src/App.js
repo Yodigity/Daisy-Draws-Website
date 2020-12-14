@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -9,10 +11,12 @@ import { About } from "./Pages/About";
 import { Home } from "./Pages/Home";
 import { Resume } from "./Pages/Resume";
 
-function App() {
+AOS.init({
+  duration: 1200,
+});
+const App = () => {
   return (
     <div className='App'>
-      
       <div className='main'>
         <Router>
           <Switch>
@@ -27,6 +31,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

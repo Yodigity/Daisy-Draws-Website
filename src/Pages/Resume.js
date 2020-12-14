@@ -1,10 +1,16 @@
 import React from "react";
-import { Row, Col, Image, Tooltip, OverlayTrigger } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  Tooltip,
+  OverlayTrigger,
+} from "react-bootstrap";
 
 import PageLayout from "../Components/PageLayout";
 
 export const Resume = () => {
-
   return (
     //Sort out Cols and Rows
     <PageLayout>
@@ -15,37 +21,44 @@ export const Resume = () => {
           </Col>
         </Row>
         <Row>
-          <Col>Email:&nbsp;
-          <a 
-          href='mailto:pengmingdan@hotmail.com'
-                target='_blank'
-                rel='noopener noreferrer'>pengmingdan@hotmail.com</a></Col>
+          <Col>
+            Email:&nbsp;
+            <a
+              href='mailto:pengmingdan@hotmail.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              pengmingdan@hotmail.com
+            </a>
+          </Col>
         </Row>
       </div>
 
       {/* About */}
-      <Row className="resume-title">
-        <Col >
-          <h1>
-            <u>About</u>
-          </h1>
-        </Col>
-        <Col></Col>
-        <Col></Col>
-      </Row>
-      <Row className='my-2 mx-auto'>
-        <Col>
-          <p>
-            Artist with 5 years of related work experience, as well as portfolio
-            of varied accomplishments, including referenced articles,
-            exhibitions, and academic achievements. Possess a strong sense of
-            artistry and forward-thinking that is consistently displayed across
-            all art pieces.
-          </p>
-        </Col>
-      </Row>
+      <Container>
+        <Row className='resume-title'>
+          <Col>
+            <h1>
+              <u>About</u>
+            </h1>
+          </Col>
+          <Col></Col>
+          <Col></Col>
+        </Row>
+        <Row className='my-2 mx-auto'>
+          <Col>
+            <p>
+              Artist with 5 years of related work experience, as well as
+              portfolio of varied accomplishments, including referenced
+              articles, exhibitions, and academic achievements. Possess a strong
+              sense of artistry and forward-thinking that is consistently
+              displayed across all art pieces.
+            </p>
+          </Col>
+        </Row>
+      </Container>
       {/* Work Experience */}
-      <Row className="resume-title">
+      <Row className='resume-title'>
         <Col>
           <h1>
             <u>Experience</u>
@@ -60,7 +73,7 @@ export const Resume = () => {
           <p className='mb-0'>Freelance</p>
           <p>Oct 2019 - Present</p>
         </Col>
-        <Col className="job-skills">
+        <Col className='job-skills'>
           <ul className='my-auto'>
             <li>
               - Design, develop, and deliver art pieces to clients according to
@@ -117,11 +130,7 @@ export const Resume = () => {
         </Col>
       </Row>{" "} */}
 
-      
-
-
-
-<Row className="resume-title"> 
+      <Row className='resume-title'>
         <Col>
           <h1>
             <u>Skills</u>
@@ -131,73 +140,78 @@ export const Resume = () => {
         <Col />
       </Row>
 
-<Row className="my-3">
-  <Col >
-      <OverlayTrigger
-    placement="right"
-    delay={{ show: 250, hide: 400 }}
-    overlay={<Tooltip className="skill-tooltip">
-    AutoCAD
-  </Tooltip>}
-  >
-    <Image
-        src='../Images/Resume-Icons/AutoCAD-icon.jpeg'
-        roundedCircle
-        height='50'
-      /> 
-      </OverlayTrigger>
-      </Col>
-     
-     <Col>
-        <OverlayTrigger placement="right"
-    delay={{ show: 250, hide: 400 }}
-    overlay={<Tooltip className="skill-tooltip">Inventor</Tooltip>}>
-        <Image
-          src='../Images/Resume-Icons/Inventor-Icon.png'
-                  roundedCircle
-                  height='50'
-                />
-        </OverlayTrigger>
-    </Col>
-   
-   <Col>
-        <OverlayTrigger placement="right"
-    delay={{ show: 250, hide: 400 }}
-    overlay={<Tooltip className="skill-tooltip">Photoshop</Tooltip>}>
-  <Image
-                  src='../Images/Resume-Icons/Photoshop-Icon.png'
-                  roundedCircle
-                  height='50'
-                />
-        </OverlayTrigger>
-       </Col>
+      <Row className='my-3'>
+        <Col>
+          <OverlayTrigger
+            placement='right'
+            delay={{ show: 250, hide: 400 }}
+            overlay={<Tooltip className='skill-tooltip'>AutoCAD</Tooltip>}
+          >
+            <Image
+              src='../Images/Resume-Icons/AutoCAD-icon.jpeg'
+              roundedCircle
+              height='50'
+            />
+          </OverlayTrigger>
+        </Col>
 
-       <Col>
-        <OverlayTrigger placement="right"
-    delay={{ show: 250, hide: 400 }}
-    overlay={<Tooltip className="skill-tooltip">Adobe Illustrator</Tooltip>}>
-  <Image
-      src='../Images/Resume-Icons/Adobe-Illustrator-Icon.png'
-      roundedCircle
-      height='50'
-    />
-        </OverlayTrigger>
-     </Col>
-    
-    <Col>
-      <OverlayTrigger 
-      placement="right"
-    delay={{ show: 250, hide: 400 }}
-    overlay={<Tooltip className="skill-tooltip">
-    UG
-  </Tooltip>}>
-  <Image
-                  src='../Images/Resume-Icons/UG-Icon.jpeg'
-                  roundedCircle
-                  height='50'
-                />
-      </OverlayTrigger>
-      </Col>
+        <Col>
+          <OverlayTrigger
+            placement='right'
+            delay={{ show: 250, hide: 400 }}
+            overlay={<Tooltip className='skill-tooltip'>Inventor</Tooltip>}
+          >
+            <Image
+              src='../Images/Resume-Icons/Inventor-Icon.png'
+              roundedCircle
+              height='50'
+            />
+          </OverlayTrigger>
+        </Col>
+
+        <Col>
+          <OverlayTrigger
+            placement='right'
+            delay={{ show: 250, hide: 400 }}
+            overlay={<Tooltip className='skill-tooltip'>Photoshop</Tooltip>}
+          >
+            <Image
+              src='../Images/Resume-Icons/Photoshop-Icon.png'
+              roundedCircle
+              height='50'
+            />
+          </OverlayTrigger>
+        </Col>
+
+        <Col>
+          <OverlayTrigger
+            placement='right'
+            delay={{ show: 250, hide: 400 }}
+            overlay={
+              <Tooltip className='skill-tooltip'>Adobe Illustrator</Tooltip>
+            }
+          >
+            <Image
+              src='../Images/Resume-Icons/Adobe-Illustrator-Icon.png'
+              roundedCircle
+              height='50'
+            />
+          </OverlayTrigger>
+        </Col>
+
+        <Col>
+          <OverlayTrigger
+            placement='right'
+            delay={{ show: 250, hide: 400 }}
+            overlay={<Tooltip className='skill-tooltip'>UG</Tooltip>}
+          >
+            <Image
+              src='../Images/Resume-Icons/UG-Icon.jpeg'
+              roundedCircle
+              height='50'
+            />
+          </OverlayTrigger>
+        </Col>
       </Row>
 
       <hr />

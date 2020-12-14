@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 import images from "../Components/images";
 import SimpleReactLightbox from "simple-react-lightbox";
@@ -7,8 +7,6 @@ import { Col, Container, Image, Fade } from "react-bootstrap";
 import PageLayout from "../Components/PageLayout";
 
 export const Gallery = () => {
-
-
   return (
     <PageLayout>
       <SimpleReactLightbox>
@@ -17,16 +15,17 @@ export const Gallery = () => {
             <SRLWrapper>
               {images.map((image) => {
                 return (
-              
                   <a key={image.id} href={image.src} data-attribute='SRL'>
                     <Image
+                      data-aos='fade-in'
+                      data-aos-duration='4000'
+                      data-aos-delay={(50 * image.id).toString()}
                       src={image.src}
                       alt={image.description}
                       width='200'
                       height='200'
                     />
                   </a>
-               
                 );
               })}
             </SRLWrapper>

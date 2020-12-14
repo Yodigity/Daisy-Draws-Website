@@ -9,7 +9,7 @@ import {
 export default () => {
   return (
     <div className='navbar-default'>
-      <Navbar >
+      <Navbar>
         <Navbar.Brand className="brand-logo" variant='dark'>Daisy Draws</Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Nav className='ml-auto'>
