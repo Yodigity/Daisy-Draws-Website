@@ -1,7 +1,7 @@
 import React from "react";
 import PageLayout from "../Components/PageLayout";
 
-import { Container, Image, Row, Col, Nav } from "react-bootstrap";
+import { Container, Image, Row, Col, Nav, Button } from "react-bootstrap";
 
 export const About = () => {
   return (
@@ -42,27 +42,34 @@ export const About = () => {
             />
           </Col>
         </Row>
+      </Container>
 
-        <article className='w-75 m-auto'>
-          <>
-            <hr />
-            <p>
-              I am <b>currently looking for new opportunities</b>! If you like
-              what you<Nav.Link href='./resume'>see</Nav.Link> Let's get
-              in&nbsp;
-              <a
-                href='mailto:red.five@rebellion.com'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                touch
-              </a>
-              !
-            </p>
-          </>
-        </article>
-        <hr />
+      <article className='new-opportunities p-2  mt-2'>
+        <>
+          <Container>
+            <div className='d-flex flex-column'>
+              <Row>
+                <h4 className='text-white'>
+                  I am <b>currently looking for new opportunities</b>
+                </h4>
+              </Row>
+              <Row>
+                <Button
+                  className='mt-2'
+                  variant='outline-primary'
+                  href='mailto:red.five@rebellion.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Get in touch
+                </Button>
+              </Row>
+            </div>
+          </Container>
+        </>
+      </article>
 
+      <Container>
         <Row>
           <Col>
             <article>

@@ -48,6 +48,15 @@ h1 {
   margin: 2.5rem;
 }
 
+.new-opportunities {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+}
+
 .image-col {
   align-items: center;
   justify-content: center;
@@ -91,7 +100,13 @@ h1 {
   background-color: #17a2b8;
 } */
 .resume-basic-info {
-  background-color: navy;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 65, 121, 0.7749474789915967) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
   padding: 1em 0;
   margin: 1em 0;
   color: #ffffff;
