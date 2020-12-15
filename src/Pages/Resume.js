@@ -56,7 +56,7 @@ export const Resume = () => {
             </p>
           </Col>
         </Row>
-
+        <hr />
         {/* Work Experience */}
         <Row className='resume-title'>
           <Col>
